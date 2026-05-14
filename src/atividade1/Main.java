@@ -1,4 +1,4 @@
-package atividade1;
+package atividade21;
 
 import java.util.Scanner;
 
@@ -23,6 +23,13 @@ public class Main {
             
             opcao = scanner.nextInt();
             scanner.nextLine(); 
+
+            if (!scanner.hasNextInt()) {
+                System.out.println("Digite apenas números!");
+
+                scanner.next(); 
+                continue;
+            }
             
             switch (opcao) {
                 case 1:
