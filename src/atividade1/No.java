@@ -1,4 +1,4 @@
-package atividade2;
+package atividade1;
 
 public class No {
 

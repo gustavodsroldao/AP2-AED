@@ -1,16 +1,6 @@
-package atividade2;
+package atividade1;
 
 public class PilhaCancelados {
-
-    private class No {
-        Pedido pedido;
-        No proximo;
-        
-        public No(Pedido pedido) {
-            this.pedido = pedido;
-            this.proximo = null;
-        }
-    }
 
     private No topo;
 
