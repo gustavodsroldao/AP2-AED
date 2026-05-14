@@ -1,4 +1,4 @@
-package atividade21;
+package atividade1;
 
 import java.util.Scanner;
 
@@ -20,16 +20,18 @@ public class Main {
             System.out.println("6. Imprimir Pedidos Cancelados");
             System.out.println("0. Sair");
             System.out.print("Escolha uma opção: ");
-            
-            opcao = scanner.nextInt();
-            scanner.nextLine(); 
+
 
             if (!scanner.hasNextInt()) {
                 System.out.println("Digite apenas números!");
 
-                scanner.next(); 
+                scanner.next();
                 continue;
             }
+            
+            opcao = scanner.nextInt();
+            scanner.nextLine(); 
+
             
             switch (opcao) {
                 case 1:
