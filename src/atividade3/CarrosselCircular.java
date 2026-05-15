@@ -1,9 +1,9 @@
 package atividade3;
 
 public class CarrosselCircular {
-    Anuncio anuncioAtual;
+    private Anuncio anuncioAtual;
 
-    void adicionarAnuncio(int id, String empresa, String descricao) {
+    public void adicionarAnuncio(int id, String empresa, String descricao) {
         Anuncio novoAnuncio = new Anuncio(id, empresa, descricao);
 
         if (anuncioAtual == null) {
@@ -15,7 +15,7 @@ public class CarrosselCircular {
         }
     }
 
-    void exibirEAvancar() {
+    public void exibirEAvancar() {
         if (anuncioAtual == null) {
             System.out.println("Não foi possível encontrar o anúncio atual.");  
         } else {
@@ -27,7 +27,7 @@ public class CarrosselCircular {
         }
     }
 
-    void listarCicloCompleto() {
+    public void listarCicloCompleto() {
         Anuncio inicio = anuncioAtual;        
         Anuncio atual = anuncioAtual;     
 
@@ -45,7 +45,7 @@ public class CarrosselCircular {
 
     }
 
-    void removerAnuncio(int id) {
+    public void removerAnuncio(int id) {
 
         if (anuncioAtual == null) {
             System.out.println("Não é possível remover um anúncio que não existe.");          
