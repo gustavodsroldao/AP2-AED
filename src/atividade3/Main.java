@@ -25,9 +25,18 @@ public class Main {
             opcao = scanner.nextInt();
 
             switch (opcao) {
-                case 1: carrosselCircular.exibirEAvancar(); break;
-                case 2: 
+                case 1:
+                    carrosselCircular.exibirEAvancar();
+                    break;
+                case 2:
                     System.out.println("Digite o ID da empresa:");
+                    if (!scanner.hasNextInt()) {
+                        System.out.println("Digite apenas números!");
+
+                        scanner.next();
+                        continue;
+                    }
+
                     int idEmpresa = scanner.nextInt();
 
                     System.out.println("Digite o nome da empresa: ");
@@ -39,19 +48,29 @@ public class Main {
 
                     carrosselCircular.adicionarAnuncio(idEmpresa, empresa, descricao);
                     break;
-                case 3: 
-                    System.out.println("Digite o ID do anúncio no qual deseja remover: ");    
+                case 3:
+                    System.out.println("Digite o ID do anúncio no qual deseja remover: ");
+
+                    if (!scanner.hasNextInt()) {
+                        System.out.println("Digite apenas números!");
+
+                        scanner.next();
+                        continue;
+                    }
+
                     int idAnuncio = scanner.nextInt();
 
-                    carrosselCircular.removerAnuncio(idAnuncio);                 
+                    carrosselCircular.removerAnuncio(idAnuncio);
                     break;
-                case 4: carrosselCircular.listarCicloCompleto(); break;
-                case 0: System.exit(0); break;
+                case 4:
+                    carrosselCircular.listarCicloCompleto();
+                    break;
+                case 0:
+                    System.exit(0);
+                    break;
                 default:
                     System.out.println("Opção inválida! Tente novamente.");
             }
-        } 
-
-        scanner.close();
+        }
     }
 }
