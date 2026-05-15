@@ -6,14 +6,21 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         CarrosselCircular carrosselCircular = new CarrosselCircular();
-        int opcao;
+        int opcao = -1;
 
-        do {
+        while (opcao != 0) {
             System.out.println("1 - Exibir e avançar");
             System.out.println("2 - Adicionar anúncio");
             System.out.println("3 - Remover Anúncio");
             System.out.println("4 - Listar Ciclo Completo");
             System.out.println("0 - Sair");
+
+            if (!scanner.hasNextInt()) {
+                System.out.println("Digite apenas números!");
+
+                scanner.next();
+                continue;
+            }
 
             opcao = scanner.nextInt();
 
@@ -39,10 +46,12 @@ public class Main {
                     carrosselCircular.removerAnuncio(idAnuncio);                 
                     break;
                 case 4: carrosselCircular.listarCicloCompleto(); break;
-                case 0: System.exit(0);
+                case 0: System.exit(0); break;
                 default:
-                    break;
+                    System.out.println("Opção inválida! Tente novamente.");
             }
-        } while (opcao != 0);
+        } 
+
+        scanner.close();
     }
 }
