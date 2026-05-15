@@ -67,7 +67,6 @@ public class Main {
                         carrosselCircular.listarCicloCompleto();
                         break;
                     case 0:
-                        System.exit(0);
                         break;
                     default:
                         System.out.println("Opção inválida! Tente novamente.");

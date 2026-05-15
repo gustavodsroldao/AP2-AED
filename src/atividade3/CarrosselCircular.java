@@ -28,13 +28,13 @@ public class CarrosselCircular {
     }
 
     public void listarCicloCompleto() {
-        Anuncio inicio = anuncioAtual;        
-        Anuncio atual = anuncioAtual;     
-
         if (anuncioAtual == null) {
             System.out.println("Não há nenhum anúncio");
             return;
         }
+        
+        Anuncio inicio = anuncioAtual;        
+        Anuncio atual = anuncioAtual;     
         
         do {
             System.out.println("ID: " + atual.id);

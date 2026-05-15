@@ -1,6 +1,6 @@
 package atividade3;
 
-public class Anuncio {
+class Anuncio {
     int id;
     String empresa;
     String descricao;
