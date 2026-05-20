@@ -127,6 +127,26 @@ Anuncio proximo; // sempre aponta para o próximo; no último nó, aponta para o
 
 ---
 
+### Atividade 2 — Playlist
+
+**Adicionando músicas à playlist**
+
+![Adicionar música](imagens/imgsatividade2/adicionarMusicaImg.jpeg)
+
+**Tocando música atual**
+
+![Tocar música atual](imagens/imgsatividade2/tocarMusicaAtualImg.jpeg)
+
+**Removendo por título**
+
+![Remover por título](imagens/imgsatividade2/removerPorTituloImg.jpeg)
+
+**Ordenando por artista**
+
+![Ordenar por artista](imagens/imgsatividade2/ordenarPorArtistaImg.jpeg)
+
+---
+
 ### Atividade 3 — Carrossel Circular de Anúncios
 
 **Adicionando anúncios**
@@ -148,26 +168,6 @@ Anuncio proximo; // sempre aponta para o próximo; no último nó, aponta para o
 **Lista após remoção**
 
 ![Lista após remoção](imagens/imgsatividade3/listaaposremocao.png)
-
----
-
-### Atividade 2 — Playlist
-
-**Adicionando músicas à playlist**
-
-![Adicionar música](imagens/imgsatividade2/adicionarMusicaImg.jpeg)
-
-**Tocando música atual**
-
-![Tocar música atual](imagens/imgsatividade2/tocarMusicaAtualImg.jpeg)
-
-**Removendo por título**
-
-![Remover por título](imagens/imgsatividade2/removerPorTituloImg.jpeg)
-
-**Ordenando por artista**
-
-![Ordenar por artista](imagens/imgsatividade2/ordenarPorArtistaImg.jpeg)
 
 ---
 
