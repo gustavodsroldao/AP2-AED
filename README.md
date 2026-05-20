@@ -97,28 +97,57 @@ Anuncio proximo; // sempre aponta para o próximo; no último nó, aponta para o
 
 ### Atividade 1 — Fila de Pedidos + Pilha de Cancelados
 
-> Output completo disponível em [`imagens/imgsatividade1/output_atividade1.txt`](imagens/imgsatividade1/output_atividade1.txt)
+**Adicionando novo pedido**
 
-Operações demonstradas:
-- Inserção de 3 pedidos na fila (enqueue)
-- Exibição da fila na ordem FIFO
-- Cancelamento do pedido ID 1 (dequeue → push para pilha)
-- Exibição da pilha de cancelados
-- Restauração do pedido (pop da pilha → enqueue na fila)
-- Atendimento do próximo pedido da fila (dequeue)
+![Adicionar novo pedido](imagens/imgsatividade1/adicionarnovopedido.png)
+
+**Imprimindo fila de pendentes**
+
+![Imprimir fila pendentes](imagens/imgsatividade1/imprimirfilapendentes.png)
+
+**Cancelando pedido**
+
+![Cancelar pedido](imagens/imgsatividade1/cancelarpedido.png)
+
+**Imprimindo pedidos cancelados**
+
+![Imprimir cancelados](imagens/imgsatividade1/imprimircancelados.png)
+
+**Restaurando pedido**
+
+![Restaurar pedido](imagens/imgsatividade1/restaurarpedidos.png)
+
+**Fila atualizada após restauração**
+
+![Fila atualizada](imagens/imgsatividade1/filaatualizada.png)
+
+**Atendendo pedido e saindo**
+
+![Atender pedido e sair](imagens/imgsatividade1/atenderpedidoesair.png)
 
 ---
 
 ### Atividade 3 — Carrossel Circular de Anúncios
 
-> Output completo disponível em [`imagens/imgsatividade3/output_atividade3.txt`](imagens/imgsatividade3/output_atividade3.txt)
+**Adicionando anúncios**
 
-Operações demonstradas:
-- Inserção de 3 anúncios (Nike, Adidas, Puma)
-- Listagem do ciclo completo (`do-while` termina ao retornar ao nó inicial)
-- Exibição e avanço 2x (ponteiro `anuncioAtual` circula)
-- Remoção do anúncio ID 2 (Adidas)
-- Nova listagem confirmando remoção sem quebrar o ciclo
+![Adicionar anúncios](imagens/imgsatividade3/adicionaranuncios.png)
+
+**Listando ciclo completo**
+
+![Listar todos](imagens/imgsatividade3/listartodos.png)
+
+**Exibindo e avançando**
+
+![Exibir e avançar](imagens/imgsatividade3/exibireavancar.png)
+
+**Removendo anúncio**
+
+![Remover anúncio](imagens/imgsatividade3/removeranuncio.png)
+
+**Lista após remoção**
+
+![Lista após remoção](imagens/imgsatividade3/listaaposremocao.png)
 
 ---
 
