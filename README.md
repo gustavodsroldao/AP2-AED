@@ -31,7 +31,6 @@ Caso esteja vazia, a operação é interrompida imediatamente com uma mensagem a
   Isso previne naturalmente a ocorrência de loops infinitos durante a iteração da lista, pois os laços de repetição (como no método `listarMusicas`) utilizam a condição `while (musicas != null)` para garantir a parada exata ao fim da estrutura.
 
 ## 4.4 Evidências de Execução
-(Substitua as marcações abaixo pelas imagens (capturas de tela) reais correspondentes à execução do seu terminal)
 
 1. Adicionando música
 ![Adicionar música](imagens/imgsatividade2/adicionarMusicaImg.jpeg)
