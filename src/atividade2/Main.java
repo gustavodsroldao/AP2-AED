@@ -27,7 +27,7 @@ public class Main {
             System.out.print("Escolha: ");
 
             opcao = sc.nextInt();
-            sc.nextLine();
+            sc.hasNextInt();
 
             switch (opcao) {
 

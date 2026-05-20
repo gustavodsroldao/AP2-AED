@@ -14,11 +14,7 @@ public class Playlist {
     }
 
     public boolean estaVazia() {
-        if (tamanho == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return tamanho == 0;
     }
 
     public void proximaMusica() {
@@ -54,6 +50,13 @@ public class Playlist {
         if (tamanho <= 1) return;
 
         No atual = inicio;
+        Musica musicaAtual;
+        if (atual != null) {
+            musicaAtual = atual.musica;
+        } else {
+            musicaAtual = null;
+        }
+
 
         for (int i = 0; i < tamanho - 1; i++) {
 
@@ -77,6 +80,18 @@ public class Playlist {
             atual = atual.proximo;
         }
 
+        if (musicaAtual != null) {
+            No auxiliar = inicio;
+
+            while (auxiliar != null) {
+                if (auxiliar.musica == musicaAtual) {
+                    atual = auxiliar;
+                    break;
+                }
+                auxiliar = auxiliar.proximo;
+            }
+        }
+
         System.out.println("Playlist ordenada por título.");
     }
 
@@ -85,6 +100,12 @@ public class Playlist {
         if (tamanho <= 1) return;
 
         No atual = inicio;
+        Musica musicaAtual;
+        if (atual != null) {
+            musicaAtual = atual.musica;
+        } else {
+            musicaAtual = null;
+        }
 
         for (int i = 0; i < tamanho - 1; i++) {
 
@@ -106,6 +127,18 @@ public class Playlist {
             menor.musica = temp;
 
             atual = atual.proximo;
+        }
+
+        if (musicaAtual != null) {
+            No auxiliar = inicio;
+
+            while (auxiliar != null) {
+                if (auxiliar.musica == musicaAtual) {
+                    atual = auxiliar;
+                    break;
+                }
+                auxiliar = auxiliar.proximo;
+            }
         }
 
         System.out.println("Playlist ordenada por artista.");
@@ -217,18 +250,24 @@ public class Playlist {
                 }
                 else if (musicas == inicio) {
 
+                    if (musicas == atual) {
+                        atual = inicio.proximo;
+                    }
+
                     inicio = inicio.proximo;
                     inicio.anterior = null;
-                    atual = inicio;
 
                     System.out.println("Música '" + titulo + "' removida do início.");
 
                 }
                 else if (musicas == fim) {
 
+                    if (musicas == atual) {
+                        atual = fim.anterior;
+                    }
+
                     fim = fim.anterior;
                     fim.proximo = null;
-                    atual = fim;
 
                     System.out.println("Música '" + titulo + "' removida do fim.");
 
@@ -261,11 +300,11 @@ public class Playlist {
             return;
         }
         No musicas = inicio;
-        int i = 0;
+        int i = 1;
 
         System.out.println("\nLista de músicas:\n");
         while (musicas != null) {
-            System.out.println((i + 1) + " - " + musicas.musica);
+            System.out.println(i + " - " + musicas.musica);
             System.out.println();
 
             musicas = musicas.proximo;
